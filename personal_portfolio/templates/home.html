@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="container my-5">
+    <div class="row align-items-center jumbotron bg-white p-5 rounded shadow">
+        <div class="col-md-7">
+            <h1 class="display-3 fw-bold text-dark">Hi, I'm Yaren!</h1>
+            <p class="lead text-muted mt-3">I'm a Software Engineering student at Near East University.</p>
+            <p class="text-secondary mt-3">I'm interested in Python, Django, and modern web technologies. I share my projects and learnings here.</p>
+            <div class="mt-5">
+                <a class="btn btn-primary btn-lg mx-2 px-4 shadow-sm" href="{% url 'projects_index' %}" role="button">View My Projects</a>
+                <a class="btn btn-outline-dark btn-lg mx-2 px-4 shadow-sm" href="{% url 'blog_index' %}" role="button">My Blog Posts</a>
+            </div>
+        </div>
+        
+        <div class="col-md-5 text-center mt-4 mt-md-0">
+            <img src= "/media/project_images/profile.jpg"alt="Yaren Profile" class="img-fluid rounded-circle shadow-lg border border-5 border-white" style="max-width: 320px; object-fit: cover; aspect-ratio: 1/1;">
+        </div>
+    </div>
+
+    <div class="row text-center mt-5 pt-4">
+        <h2 class="mb-4">My Skills & Interests</h2>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-primary">Python & Django</h5>
+                    <p class="card-text text-muted">Web application development, backend logic, and database management.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-success">Frontend</h5>
+                    <p class="card-text text-muted">Modern and responsive user interface designs with HTML, CSS, and Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-danger">Engineering</h5>
+                    <p class="card-text text-muted">Software development lifecycle, algorithm design, and problem solving.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
