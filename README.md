@@ -1,6 +1,6 @@
 # Yaren | Software Engineering Portfolio 🚀
-
-Welcome to my personal portfolio website! I am a 2nd-year Software Engineering student at Near East University. This project serves as a platform to showcase my software projects and share my technical insights through a built-in blog.
+A personal portfolio website built with **Django**, **Python**, and **Bootstrap** to showcase my projects, technical blog posts, and software engineering skills.
+This project reflects my learning journey as a Software Engineering student at Near East University.
 
 ## 🛠 Tech Stack
 - **Backend:** Python & Django Framework
@@ -21,8 +21,16 @@ Welcome to my personal portfolio website! I am a 2nd-year Software Engineering s
 - `media/`: Storage for project screenshots and profile images.
 
 ## 🚀 Local Setup
-To run this project locally on your machine:
+```bash
+git clone https://github.com/yarenkoluk/yaren-portfolio.git
+cd yaren-portfolio
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/yarenkoluk/yaren-portfolio.git](https://github.com/yarenkoluk/yaren-portfolio.git)
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+Open `http://127.0.0.1:8000/` in your browser.
